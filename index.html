@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halaman Masuk</title>
+  <link rel="stylesheet" href="stylelogin.css" />
+</head>
+<body>
+  <div class="login-container">
+    <form class="login-form" action="proseslogin.php" method="post">
+      <h2>Masuk</h2>
+
+      <div class="input-group mb-3">
+        <!-- Tambahkan name="nama" -->
+        <input type="text" class="form-control" name="nama" placeholder="Nama lengkap" required />
+        <div class="input-group-text"><span class="bi bi-person"></span></div>
+      </div>
+
+      <div class="input-group mb-3">
+        <!-- Tambahkan name="password" -->
+        <input type="password" class="form-control" name="password" placeholder="Password" required />
+        <div class="input-group-text"><span class="bi bi-lock-fill"></span></div>
+      </div>
+
+      <div class="input-group">
+        <label for="role">Masuk sebagai</label>
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Pilih peran</option>
+          <option value="admin">Admin</option>
+          <option value="guru">Guru</option>
+          <option value="siswa">Siswa</option>
+        </select>
+      </div>
+
+      <button type="submit">Masuk</button>
+      <p>Belum punya akun? <a href="pageregister.html" class="register-button">Daftar</a></p>
+    </form>
+  </div>
+
+  <!-- Modal Error -->
+<div class="modal-bg" id="modalWarning" style="display:none;">
+    <div class="modal-box">
+        <div id="modalMsg"></div>
+        <button onclick="closeModal()">Cancel</button>
+    </div>
+</div>
+<script>
+function getQueryParam(name) {
+    const url = new URL(window.location.href);
+    return url.searchParams.get(name);
+}
+function closeModal() {
+    document.getElementById('modalWarning').style.display = 'none';
+    // Hapus query error dari URL agar modal tidak muncul lagi saat reload
+    const url = new URL(window.location.href);
+    url.searchParams.delete('error');
+    window.history.replaceState({}, document.title, url.pathname + url.search);
+}
+window.onload = function() {
+    var msg = getQueryParam('error');
+    if (msg) {
+        document.getElementById('modalMsg').textContent = msg;
+        document.getElementById('modalWarning').style.display = 'flex';
+    }
+}
+</script>
+<style>
+.modal-bg {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.4);
+    align-items: center; justify-content: center;
+}
+.modal-box {
+    background: #fff;
+    padding: 30px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    min-width: 300px;
+}
+.modal-box button {
+    margin-top: 18px;
+    padding: 8px 24px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal-box button:hover {
+    background: #b52a37;
+}
+</style>
+</body>
+</html>

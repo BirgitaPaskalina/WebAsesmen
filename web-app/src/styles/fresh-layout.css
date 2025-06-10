@@ -1,0 +1,88 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Styling for body */
+body {
+    background-color: #e9ecef;
+    color: #343a40;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for headings */
+h1, h2, h3 {
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+/* Styling for tables */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+/* Styling for table header */
+th {
+    background: #007bff;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Styling for table cells */
+td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+/* Styling for even table rows */
+tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background: #e2e6ea;
+}
+
+/* Styling for buttons */
+button {
+    background: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Styling for footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #343a40;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+}

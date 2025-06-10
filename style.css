@@ -1,0 +1,104 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling untuk body */
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling untuk judul */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk tabel */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk header tabel */
+th {
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Styling untuk isi tabel */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styling untuk baris genap */
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Hover efek pada baris */
+tr:hover {
+    background: #ddd;
+    transition: 0.3s;
+}
+
+/* Styling untuk tombol Edit dan Hapus */
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Styling tombol Edit */
+a[href*="edit"] {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+a[href*="edit"]:hover {
+    background: #218838;
+}
+
+/* Styling tombol Hapus */
+a[href*="hapus"] {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+}
+
+a[href*="hapus"]:hover {
+    background: #c82333;
+}
+
+/* Styling tombol Tambah Data */
+a[href*="tambah"] {
+    display: inline-block;
+    margin-top: 20px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a[href*="tambah"]:hover {
+    background: #0056b3;
+}

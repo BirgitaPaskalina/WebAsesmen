@@ -1,0 +1,105 @@
+/* Styling for the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+}
+
+table.table th,
+table.table td {
+    padding: 12px 16px; /* Atur jarak sesuai kebutuhan */
+    vertical-align: middle;
+}
+
+.table thead th {
+    background-color: #28a745; /* Green color */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table tbody td {
+    text-align: center;
+}
+
+/* Styling for the card */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Remove space around the web page */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for Edit button */
+.btn-edit {
+    background-color: #0659f4; /* Yellow color */
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #1852ae; /* Darker yellow on hover */
+}
+
+/* Styling for Delete button */
+.btn-delete {
+    background-color: #fe3b4f; /* Red color */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c01829; /* Darker red on hover */
+}
