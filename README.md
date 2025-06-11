@@ -49,47 +49,31 @@ Clone :  Link repo
 
 ### LogOut
 
-## Mobile support
+## 🛠️ Fitur Utama
 
-## [Usage](https://iharsh234.github.io/WebApp/) 
+1. Dashboard Siswa & Guru: Memudahkan dalam memantau perkembangan siswa dan guru.
 
-### Development
-Want to contribute? Great!
+2. Manajemen Data: Pengelolaan data siswa, guru, dan jurusan secara efisien.
 
-To fix a bug or enhance an existing module, follow these steps:
+3. Pengumuman: Fitur untuk menyampaikan informasi penting kepada pengguna.
 
-- Fork the repo
-- Create a new branch (`git checkout -b improve-feature`)
-- Make the appropriate changes in the files
-- Add changes to reflect the changes made
-- Commit your changes (`git commit -am 'Improve feature'`)
-- Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request 
+4. Keamanan: Autentikasi pengguna untuk memastikan keamanan data.
 
-### Bug / Feature Request
+## 🧪 Pengujian
+Aplikasi ini telah diuji secara manual untuk memastikan semua fitur berfungsi dengan baik. Pengujian mencakup:
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/iharsh234/WebApp/issues/new) by including your search query and the expected result.
+- Fungsi login dan logout.
+- Manajemen data siswa dan guru.
+- Pengelolaan pengumuman.
+- Keamanan dan autentikasi pengguna.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/iharsh234/WebApp/issues/new). Please include sample queries and their corresponding results.
+## 📬 Kontak
 
+Untuk pertanyaan atau informasi lebih lanjut, silakan hubungi:
 
-## Built with 
+Email: birgitapaskalinaayu@gmail.com
 
-- [jQuery - Ajax](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
-- [Google Chart API](https://developers.google.com/chart/interactive/docs/quick_start) - Free , Rich Gallery , Customizable and Cross-browser compatible.
-- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
-
-
-## To-do
-- Add BSE (India) Symbol to the current App.
-- Decide comparison models of Stocks. (suggestions are most welcome).
-- Another WebApp, capable of comparing at least 10 stocks.
-
-## Team
-
-[![Harsh Vijay](https://avatars1.githubusercontent.com/u/12688534?v=3&s=144)](https://github.com/iharsh234)  | [![Quandl.com](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://www.quandl.com/)
----|---
-[Harsh Vijay ](https://github.com/iharsh234) |[Quandl](https://www.quandl.com)
+GitHub: https://github.com/BirgitaPaskalina
 
 ## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
 
