@@ -159,8 +159,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
       </nav>
       <!--end::Header-->
       <?php include "sidebar.php"; ?>
-      <!--begin::App Main-->
-      <main class="app-main">
+      <main class="app-main"><!--begin::App Main-->
+      
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->

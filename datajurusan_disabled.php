@@ -1,6 +1,6 @@
 <?php
 include "koneksi.php";
-$db = new database();
+$dp = new database();
 session_start();
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
   header("Location: index.html");
@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>AdminLTE 4 | Data Agama</title>
+    <title>AdminLTE 4 | Data Jurusan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" crossorigin="anonymous"/>
@@ -114,11 +114,11 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
         <div class="app-content-header">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">Data Agama</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Data Jurusan</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Data Agama</li>
+                  <li class="breadcrumb-item active" aria-current="page">Data Jurusan</li>
                 </ol>
               </div>
             </div>
@@ -130,32 +130,29 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
               <div class="col-md-12">
                  <div class="card mb-4">
                   <div class="card-header">
-                    <h3 class="card-title">Tabel Data Agama</h3>
+                    <h3 class="card-title">Tabel Data Jurusan</h3>
                   </div>
                   <div class="card-body p-0">
                     <div class="table-responsive">
-                      <table class="table table-striped" id="tabelAgama">
+                      <table class="table table-striped" id="tabelJurusan">
                         <thead>
                           <tr>
                             <th>No</th>
-                            <th>ID Agama</th>
-                            <th>Nama Agama</th>
-                            <th>Option</th>
+                            <th>Kode Jurusan</th>
+                            <th>Nama Jurusan</th>
+                          
                           </tr>
                         </thead>
                         <tbody>
                           <?php
                           $no = 1;
-                          foreach($db->tampil_data_agama() as $x):
+                          foreach($dp->tampil_data_jurusan() as $x):
                           ?>
                           <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= htmlspecialchars($x['idagama']); ?></td>
-                            <td><?= htmlspecialchars($x['nama_agama']); ?></td>
-                            <td>
-                              <a href="edit_agama.php?idagama=<?= htmlspecialchars($x['idagama']); ?>&aksi=edit" class="btn-edit"><i class="bi bi-pencil-square"></i> Edit</a>
-                              <a href="proses.php?idagama=<?= htmlspecialchars($x['idagama']); ?>&aksi=hapus" class="btn-delete" onclick="return confirm('Yakin ingin menghapus data ini?')"><i class="bi bi-trash"></i> Hapus</a>
-                            </td>
+                            <td><?= htmlspecialchars($x['kode_jurusan']); ?></td>
+                            <td><?= htmlspecialchars($x['nama_jurusan']); ?></td>
+                            
                           </tr>
                           <?php endforeach; ?>
                         </tbody>
@@ -182,7 +179,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
     <script src="dist/js/adminlte.js"></script>
     <script>
       $(document).ready(function (){
-        $('#tabelAgama').DataTable();
+        $('#tabelJurusan').DataTable();
       });
     </script>
   </body>

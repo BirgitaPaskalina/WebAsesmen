@@ -140,7 +140,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
                             <th>No</th>
                             <th>ID Agama</th>
                             <th>Nama Agama</th>
-                            <th>Option</th>
+                        
                           </tr>
                         </thead>
                         <tbody>
@@ -152,10 +152,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
                             <td><?= $no++; ?></td>
                             <td><?= htmlspecialchars($x['idagama']); ?></td>
                             <td><?= htmlspecialchars($x['nama_agama']); ?></td>
-                            <td>
-                              <a href="edit_agama.php?idagama=<?= htmlspecialchars($x['idagama']); ?>&aksi=edit" class="btn-edit"><i class="bi bi-pencil-square"></i> Edit</a>
-                              <a href="proses.php?idagama=<?= htmlspecialchars($x['idagama']); ?>&aksi=hapus" class="btn-delete" onclick="return confirm('Yakin ingin menghapus data ini?')"><i class="bi bi-trash"></i> Hapus</a>
-                            </td>
+                            
                           </tr>
                           <?php endforeach; ?>
                         </tbody>

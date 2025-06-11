@@ -76,6 +76,11 @@ function tambah_agama($nama_agama) {
     mysqli_query($this->koneksi, $query);
 }
 
+function tambah_jurusan($kode_jurusan, $nama_jurusan) {
+    $query = "INSERT INTO jurusan (kode_jurusan, nama_jurusan) VALUES ('$kode_jurusan', '$nama_jurusan')";
+    mysqli_query($this->koneksi, $query);
+}
+
 function tambah_user($nama, $email, $password, $role) {
     // Enkripsi password sebelum disimpan
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
