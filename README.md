@@ -67,9 +67,9 @@ Clone :  [Link repo](https://github.com/BirgitaPaskalina/WebAsesmen)
 
 ## 🛠️ Fitur Utama
 
-1. Dashboard Siswa & Guru: Memudahkan dalam memantau perkembangan siswa dan guru.
+1. Dashboard Siswa, Admin & Guru: Memudahkan dalam memantau perkembangan.
 
-2. Manajemen Data: Pengelolaan data siswa, guru, dan jurusan secara efisien.
+2. Manajemen Data: Pengelolaan data siswa, agama, user dan jurusan secara efisien.
 
 3. Pengumuman: Fitur untuk menyampaikan informasi penting kepada pengguna.
 
@@ -79,7 +79,7 @@ Clone :  [Link repo](https://github.com/BirgitaPaskalina/WebAsesmen)
 Aplikasi ini telah diuji secara manual untuk memastikan semua fitur berfungsi dengan baik. Pengujian mencakup:
 
 - Fungsi login dan logout.
-- Manajemen data siswa dan guru.
+- Manajemen data.
 - Pengelolaan pengumuman.
 - Keamanan dan autentikasi pengguna.
 
