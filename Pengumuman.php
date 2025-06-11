@@ -146,20 +146,63 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
       <!--end::Header-->
       <?php include "sidebar.php"; ?>
       <!--begin::App Main-->
-      <main class="app-main">
-        <!--begin::App Content Header-->
-        <div class="app-content-header">
-          <!--begin::Container-->
-          <div class="container-fluid">
-            <!--begin::Row-->
-           <div class="row">
-  <div class="col-12 text-center">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Pengumuman</li>
-    </ol>
+      
+<main class="app-main">
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pengumuman</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0"><i class="bi bi-megaphone-fill"></i> Daftar Pengumuman</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="badge bg-success me-2">Baru</span>
+                  <strong>Penerimaan Peserta Didik Baru (PPDB) 2025</strong>
+                  <br>
+                  <small class="text-muted"><i class="bi bi-calendar-event"></i> 10 Juni 2025</small>
+                  <div class="mt-1">Pendaftaran PPDB dibuka mulai 15 Juni 2025. Info lengkap di menu PPDB.</div>
+                </li>
+                <li class="list-group-item">
+                  <span class="badge bg-warning text-dark me-2">Agenda</span>
+                  <strong>Ujian Akhir Semester Genap</strong>
+                  <br>
+                  <small class="text-muted"><i class="bi bi-calendar-event"></i> 20 Juni 2025</small>
+                  <div class="mt-1">UAS Genap akan dilaksanakan tanggal 24-28 Juni 2025. Persiapkan diri dengan baik.</div>
+                </li>
+                <li class="list-group-item">
+                  <span class="badge bg-info text-dark me-2">Lomba</span>
+                  <strong>Lomba Kebersihan Kelas</strong>
+                  <br>
+                  <small class="text-muted"><i class="bi bi-calendar-event"></i> 18 Juni 2025</small>
+                  <div class="mt-1">Seluruh kelas wajib berpartisipasi. Penilaian dilakukan setiap hari Jumat.</div>
+                </li>
+                <li class="list-group-item">
+                  <span class="badge bg-danger me-2">Penting</span>
+                  <strong>Libur Idul Adha</strong>
+                  <br>
+                  <small class="text-muted"><i class="bi bi-calendar-event"></i> 17 Juni 2025</small>
+                  <div class="mt-1">Sekolah libur tanggal 17-18 Juni 2025 dalam rangka Hari Raya Idul Adha.</div>
+                </li>
+                <!-- Tambahkan pengumuman lain sesuai kebutuhan -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</main>
     <!--end::App Wrapper-->
     <!--begin::Script-->
     <!--begin::Third Party Plugin(OverlayScrollbars)-->

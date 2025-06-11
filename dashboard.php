@@ -275,18 +275,19 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
             <!--end::Row-->
             <!--begin::Row-->
             <div class="row">
-              <!-- Start col -->
-            <div class="col-lg-7 connectedSortable">
-  <div class="card mb-4">
-    <div class="card-header">
-      <h3 class="card-title">Jumlah Peserta Didik</h3>
-    </div>
-    <div class="position-relative mb-4">
-      <div id="sales-chart"></div> <!-- Tinggi ditambahkan di sini -->
+            
+<div class="row">
+  <!-- Start col -->
+  <div class="col-lg-7 connectedSortable">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title">Pengumuman</h3>
+      </div>
+      <div class="card-body p-0">
+        <iframe src="Pengumuman.php" style="width:100%; min-height:340px; border:none; border-radius:8px; background:#fff;"></iframe>
+      </div>
     </div>
   </div>
-</div>
-
   <!-- Tambahkan kolom baru untuk jadwal -->
   <div class="col-lg-5">
     <div class="card mb-4">
@@ -402,8 +403,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
   const sales_chart_options = {
     series: [
       {
-        name: 'Jumlah Peserta Didik',
-        data: [1750, 1500, 1580, 1700, 1840, 2000],
+        name: 'Jumlah Peserta Didik ',
+        data: [60, 65, 1580, 1700, 1840, 2000],
       }
     ],
     chart: {

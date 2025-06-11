@@ -13,7 +13,7 @@
             />
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">SMKN 6 SURAKARTA</span>
+            <span class="brand-text fw-light">VISKA</span>
             <!--end::Brand Text-->
           </a>
           <!--end::Brand Link-->
@@ -232,11 +232,19 @@
                 <a href="Jadwal.php" class="nav-link active">
                   <i class="nav-icon bi bi-speedometer"></i>
                   <p>
-                    Jadwal
+                    Kegiatan 
                   </p>
                 </a>
               </li>
                   
+              <a href="Pengumuman.php" class="nav-link">
+                  <i class="nav-icon bi bi-pencil-square"></i>
+                  <p>
+                    Pengumuman
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+
               <li class="nav-header">Akun</li>
               <li class="nav-item">
               
