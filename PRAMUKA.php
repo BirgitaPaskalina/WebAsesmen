@@ -145,39 +145,120 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
       <!--end::Header-->
       <?php include "sidebar.php"; ?>
       <!--begin::App Main-->
-      <main class="app-main">
-        <!--begin::App Content Header-->
-        <div class="app-content-header">
-          <!--begin::Container-->
-          <div class="container-fluid">
-            <!--begin::Row-->
-           <div class="row">
-  <div class="col-12 text-center">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Ekstrakurikuler</li>
-       <li class="breadcrumb-item active" aria-current="page">PRAMUKA</li>
-    </ol>
-
-    <div class="container mt-4">
-  <div class="card shadow-lg">
-    <img src="Pramuka.jpg" class="card-img-top" alt="Kegiatan Seni Tari SMKN 6 Surakarta">
-    <div class="card-body text-start">Ekstrakurikuler Pramuka</h3>
-      <p>
-        Pramuka adalah salah satu ekstrakurikuler wajib di SMKN 6 Surakarta yang bertujuan untuk membentuk siswa menjadi pribadi yang mandiri, disiplin, bertanggung jawab, serta peduli terhadap lingkungan sosial. Kegiatan kepramukaan mengajarkan banyak keterampilan hidup (life skill), kerja sama tim, dan jiwa kepemimpinan.
-      </p>
-      <p>
-        Dalam kegiatan rutin, siswa mengikuti latihan baris-berbaris, tali-temali, penjelajahan, serta berbagai permainan edukatif yang memperkuat mental dan fisik. Pramuka juga melibatkan siswa dalam kegiatan sosial seperti bakti masyarakat, donor darah, dan kegiatan alam seperti hiking atau kemah.
-      </p>
-      <p>
-        Ekstrakurikuler Pramuka berperan penting dalam membentuk karakter generasi muda yang tangguh, kreatif, dan cinta tanah air. SMKN 6 Surakarta bangga memiliki anggota Pramuka yang aktif dan berprestasi baik di tingkat kota maupun provinsi.
-      </p>
+<main class="app-main">
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ekstrakurikuler</li>
+            <li class="breadcrumb-item active" aria-current="page">PRAMUKA</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-lg-4 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-success text-white">
+              <h5 class="mb-0"><i class="bi bi-compass-fill"></i> Profil PRAMUKA</h5>
+            </div>
+            <div class="card-body">
+              <img src="Pramuka.jpg" alt="Logo Pramuka" class="mb-3 rounded" style="max-width:90px;">
+              <p>
+                <strong>PRAMUKA (Praja Muda Karana)</strong> adalah ekstrakurikuler wajib yang membentuk siswa menjadi pribadi mandiri, disiplin, bertanggung jawab, dan peduli lingkungan. Kegiatan kepramukaan mengajarkan keterampilan hidup, kerja sama tim, dan kepemimpinan.
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li><i class="bi bi-calendar-event"></i> Periode: 2024/2025</li>
+                <li><i class="bi bi-person-badge"></i> Pembina: Kak Budi, S.Pd</li>
+                <li><i class="bi bi-geo-alt"></i> Lokasi: Lapangan Pramuka</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-info text-white">
+              <h5 class="mb-0"><i class="bi bi-people"></i> Jadwal & Pembina</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-7">
+                  <h6 class="fw-bold mb-2"><i class="bi bi-calendar-week"></i> Jadwal Latihan</h6>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Jumat
+                      <span class="badge bg-success rounded-pill">15.30 - 17.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Sabtu
+                      <span class="badge bg-success rounded-pill">08.00 - 10.00</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-5">
+                  <h6 class="fw-bold mb-2"><i class="bi bi-person-lines-fill"></i> Daftar Pembina</h6>
+                  <ul class="list-group">
+                    <li class="list-group-item">Kak Budi, S.Pd (Pembina Utama)</li>
+                    <li class="list-group-item">Kak Sari, S.Pd (Pembina Pendamping)</li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <h6 class="fw-bold mb-2"><i class="bi bi-info-circle"></i> Info Kegiatan</h6>
+              <ul>
+                <li>Latihan baris-berbaris, tali-temali, penjelajahan, dan permainan edukatif.</li>
+                <li>Kegiatan sosial: bakti masyarakat, donor darah, dan kemah.</li>
+                <li>Berprestasi di lomba kepramukaan tingkat kota/provinsi.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Daftar Anggota Pramuka (opsional) -->
+      <!--
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0"><i class="bi bi-list-ul"></i> Daftar Anggota Pramuka</h5>
+            </div>
+            <div class="card-body p-2">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Nama</th>
+                      <th>Kelas</th>
+                      <th>Jabatan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Andi Saputra</td>
+                      <td>X IPA 1</td>
+                      <td>Ketua</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Siti Aminah</td>
+                      <td>XI IPS 2</td>
+                      <td>Wakil Ketua</td>
+                    </tr>
+                    <!-- Tambahkan anggota lain sesuai kebutuhan -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
     </div>
   </div>
-</div>
-
-  </div>
-</div>
+</main>
     <!--end::App Wrapper-->
     <!--begin::Script-->
     <!--begin::Third Party Plugin(OverlayScrollbars)-->

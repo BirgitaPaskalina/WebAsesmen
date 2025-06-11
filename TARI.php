@@ -145,39 +145,121 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
       <!--end::Header-->
       <?php include "sidebar.php"; ?>
       <!--begin::App Main-->
-      <main class="app-main">
-        <!--begin::App Content Header-->
-        <div class="app-content-header">
-          <!--begin::Container-->
-          <div class="container-fluid">
-            <!--begin::Row-->
-           <div class="row">
-  <div class="col-12 text-center">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Ekstrakurikuler</li>
-       <li class="breadcrumb-item active" aria-current="page">Seni Tari</li>
-    </ol>
-
-    <div class="container mt-4">
-  <div class="card shadow-lg">
-    <img src="tari.jpg" class="card-img-top" alt="Kegiatan Seni Tari SMKN 6 Surakarta">
-    <div class="card-body text-start">Ekstrakurikuler Seni Tari</h3>
-      <p>
-        Ekstrakurikuler Seni Tari di SMKN 6 Surakarta merupakan salah satu kegiatan yang bertujuan untuk melestarikan budaya dan mengembangkan bakat seni peserta didik. Dalam kegiatan ini, siswa dibimbing untuk memahami gerakan tari tradisional dan modern dengan teknik yang benar, serta memperkuat rasa percaya diri mereka dalam tampil di depan umum.
-      </p>
-      <p>
-        Selain latihan rutin, anggota ekstrakurikuler Seni Tari juga sering berpartisipasi dalam berbagai lomba dan pertunjukan, baik di tingkat sekolah, kota, maupun provinsi. Kegiatan ini tidak hanya meningkatkan kemampuan artistik siswa, tetapi juga membentuk karakter disiplin dan kerja sama dalam tim.
-      </p>
-      <p>
-        Melalui ekstrakurikuler ini, sekolah berharap dapat menciptakan generasi muda yang tidak hanya berprestasi di bidang akademik, tetapi juga memiliki kecintaan terhadap seni dan budaya bangsa.
-      </p>
+      
+<main class="app-main">
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ekstrakurikuler</li>
+            <li class="breadcrumb-item active" aria-current="page">Seni Tari</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-lg-4 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-warning text-white">
+              <h5 class="mb-0"><i class="bi bi-stars"></i> Profil Seni Tari</h5>
+            </div>
+            <div class="card-body">
+              <img src="tari.jpg" alt="Ekstrakurikuler Seni Tari" class="mb-3 rounded" style="max-width:90px;">
+              <p>
+                <strong>Ekstrakurikuler Seni Tari</strong> di SMKN 6 Surakarta bertujuan melestarikan budaya dan mengembangkan bakat seni peserta didik. Siswa dibimbing memahami gerakan tari tradisional dan modern, serta memperkuat rasa percaya diri tampil di depan umum.
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li><i class="bi bi-calendar-event"></i> Periode: 2024/2025</li>
+                <li><i class="bi bi-person-badge"></i> Pembina: Ibu Dewi, S.Pd</li>
+                <li><i class="bi bi-geo-alt"></i> Lokasi: Aula Seni</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-info text-white">
+              <h5 class="mb-0"><i class="bi bi-people"></i> Jadwal & Pembina</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-7">
+                  <h6 class="fw-bold mb-2"><i class="bi bi-calendar-week"></i> Jadwal Latihan</h6>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Selasa & Kamis
+                      <span class="badge bg-warning rounded-pill text-dark">15.30 - 17.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Sabtu
+                      <span class="badge bg-warning rounded-pill text-dark">08.00 - 10.00</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-5">
+                  <h6 class="fw-bold mb-2"><i class="bi bi-person-lines-fill"></i> Daftar Pembina</h6>
+                  <ul class="list-group">
+                    <li class="list-group-item">Ibu Dewi, S.Pd (Pembina Utama)</li>
+                    <li class="list-group-item">Mbak Rara (Pelatih Tari)</li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <h6 class="fw-bold mb-2"><i class="bi bi-info-circle"></i> Info Kegiatan</h6>
+              <ul>
+                <li>Latihan rutin tari tradisional dan modern.</li>
+                <li>Berpartisipasi dalam lomba dan pertunjukan seni di sekolah maupun luar sekolah.</li>
+                <li>Meningkatkan kreativitas, disiplin, dan kerja sama tim.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Daftar Anggota Tari (opsional) -->
+      <!--
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0"><i class="bi bi-list-ul"></i> Daftar Anggota Seni Tari</h5>
+            </div>
+            <div class="card-body p-2">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Nama</th>
+                      <th>Kelas</th>
+                      <th>Jabatan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Ayu Lestari</td>
+                      <td>X IPA 1</td>
+                      <td>Ketua</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Siti Aminah</td>
+                      <td>XI IPS 2</td>
+                      <td>Wakil Ketua</td>
+                    </tr>
+                    <!-- Tambahkan anggota lain sesuai kebutuhan -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
     </div>
   </div>
-</div>
-
-  </div>
-</div>
+</main>
     <!--end::App Wrapper-->
     <!--begin::Script-->
     <!--begin::Third Party Plugin(OverlayScrollbars)-->

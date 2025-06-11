@@ -145,39 +145,121 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
       <!--end::Header-->
       <?php include "sidebar.php"; ?>
       <!--begin::App Main-->
-      <main class="app-main">
-        <!--begin::App Content Header-->
-        <div class="app-content-header">
-          <!--begin::Container-->
-          <div class="container-fluid">
-            <!--begin::Row-->
-           <div class="row">
-  <div class="col-12 text-center">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Ekstrakurikuler</li>
-       <li class="breadcrumb-item active" aria-current="page">PASKIBRA</li>
-    </ol>
-
-    <div class="container mt-4">
-  <div class="card shadow-lg">
-    <img src="Paskibra.jpg" class="card-img-top" alt="Kegiatan Seni Tari SMKN 6 Surakarta">
-    <div class="card-body text-start">Ekstrakurikuler Paskibra</h3>
-      <p>
-        Paskibra (Pasukan Pengibar Bendera) merupakan salah satu ekstrakurikuler unggulan di SMKN 6 Surakarta yang bertujuan untuk membentuk karakter disiplin, tanggung jawab, dan kepemimpinan pada siswa. Anggota Paskibra dilatih secara intensif untuk melaksanakan tugas upacara dengan baik dan penuh kedisiplinan.
-      </p>
-      <p>
-        Kegiatan rutin Paskibra meliputi latihan baris-berbaris, pelatihan fisik, dan penguatan mental. Selain itu, anggota juga mendapatkan pembinaan dalam hal etika, organisasi, dan jiwa nasionalisme. Paskibra turut berperan penting dalam upacara bendera setiap Senin dan hari-hari besar nasional di sekolah.
-      </p>
-      <p>
-        Melalui ekstrakurikuler ini, siswa tidak hanya dibentuk secara fisik, tetapi juga dilatih menjadi pemimpin yang tangguh dan teladan bagi siswa lainnya. Paskibra SMKN 6 Surakarta sering dipercaya untuk mengikuti upacara di tingkat kota bahkan provinsi.
-      </p>
+    
+<main class="app-main">
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ekstrakurikuler</li>
+            <li class="breadcrumb-item active" aria-current="page">PASKIBRA</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-lg-4 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-danger text-white">
+              <h5 class="mb-0"><i class="bi bi-flag-fill"></i> Profil PASKIBRA</h5>
+            </div>
+            <div class="card-body">
+              <img src="Paskibra.jpg" alt="Logo Paskibra" class="mb-3 rounded" style="max-width:90px;">
+              <p>
+                <strong>PASKIBRA (Pasukan Pengibar Bendera)</strong> adalah ekstrakurikuler yang membentuk karakter disiplin, tanggung jawab, dan kepemimpinan siswa. Anggota Paskibra dilatih intensif untuk melaksanakan tugas upacara dengan baik dan penuh kedisiplinan.
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li><i class="bi bi-calendar-event"></i> Periode: 2024/2025</li>
+                <li><i class="bi bi-person-badge"></i> Pembina: Bapak Andi, S.Pd</li>
+                <li><i class="bi bi-geo-alt"></i> Lokasi: Lapangan Utama</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-info text-white">
+              <h5 class="mb-0"><i class="bi bi-people"></i> Jadwal & Pembina</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-7">
+                  <h6 class="fw-bold mb-2"><i class="bi bi-calendar-week"></i> Jadwal Latihan</h6>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Senin & Kamis
+                      <span class="badge bg-primary rounded-pill">15.30 - 17.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Sabtu
+                      <span class="badge bg-primary rounded-pill">08.00 - 10.00</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-5">
+                  <h6 class="fw-bold mb-2"><i class="bi bi-person-lines-fill"></i> Daftar Pembina</h6>
+                  <ul class="list-group">
+                    <li class="list-group-item">Bapak Andi, S.Pd (Pembina Utama)</li>
+                    <li class="list-group-item">Ibu Rina, S.Pd (Pembina Pendamping)</li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <h6 class="fw-bold mb-2"><i class="bi bi-info-circle"></i> Info Kegiatan</h6>
+              <ul>
+                <li>Latihan baris-berbaris, pelatihan fisik, dan penguatan mental.</li>
+                <li>Berperan dalam upacara bendera setiap Senin dan hari besar nasional.</li>
+                <li>Sering mewakili sekolah pada upacara tingkat kota/provinsi.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Daftar Anggota Paskibra (opsional) -->
+      <!--
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-header bg-success text-white">
+              <h5 class="mb-0"><i class="bi bi-list-ul"></i> Daftar Anggota Paskibra</h5>
+            </div>
+            <div class="card-body p-2">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Nama</th>
+                      <th>Kelas</th>
+                      <th>Jabatan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Putra Pratama</td>
+                      <td>XI IPA 2</td>
+                      <td>Ketua</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Siti Rahma</td>
+                      <td>X IPS 1</td>
+                      <td>Wakil Ketua</td>
+                    </tr>
+                    <!-- Tambahkan anggota lain sesuai kebutuhan -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
     </div>
   </div>
-</div>
-
-  </div>
-</div>
+</main>
     <!--end::App Wrapper-->
     <!--begin::Script-->
     <!--begin::Third Party Plugin(OverlayScrollbars)-->

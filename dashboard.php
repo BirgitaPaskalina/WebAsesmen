@@ -192,6 +192,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
       <p>Siswa</p>
     </div>
 
+    
+
     <!-- Tambahkan gambar user -->
  <img src="user.png" alt="Major Icon"
      style="position: absolute; top: 0; right: 10px; height: 98%; opacity: 0.1;" />
@@ -281,6 +283,19 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
     </div>
     <div class="position-relative mb-4">
       <div id="sales-chart"></div> <!-- Tinggi ditambahkan di sini -->
+    </div>
+  </div>
+</div>
+
+  <!-- Tambahkan kolom baru untuk jadwal -->
+  <div class="col-lg-5">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title">Jadwal Kegiatan</h3>
+      </div>
+      <div class="card-body p-0">
+        <iframe src="jadwal.php" style="width:100%; min-height:300px; border:none; border-radius:8px; background:#fff;"></iframe>
+      </div>
     </div>
   </div>
 </div>

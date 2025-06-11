@@ -145,21 +145,140 @@ $dp = new database();
       <!--end::Header-->
       <?php include "sidebar.php"; ?>
       <!--begin::App Main-->
-      <main class="app-main">
-        <!--begin::App Content Header-->
-        <div class="app-content-header">
-          <!--begin::Container-->
-          <div class="container-fluid">
-            <!--begin::Row-->
-           <div class="row">
-  <div class="col-12 text-center">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Ekstrakurikuler</li>
-       <li class="breadcrumb-item active" aria-current="page">OSIS</li>
-    </ol>
+      
+
+<main class="app-main">
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ekstrakurikuler</li>
+            <li class="breadcrumb-item active" aria-current="page">OSIS</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-lg-4 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0"><i class="bi bi-people-fill"></i> Profil OSIS</h5>
+            </div>
+            <div class="card-body">
+              <img src="osis_logo.png" alt="Logo OSIS" class="mb-3" style="max-width:80px;">
+              <p>
+                <strong>OSIS (Organisasi Siswa Intra Sekolah)</strong> adalah organisasi resmi siswa di sekolah yang bertujuan mengembangkan minat, bakat, kepemimpinan, dan karakter siswa melalui berbagai kegiatan positif.
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li><i class="bi bi-calendar-event"></i> Periode: 2024/2025</li>
+                <li><i class="bi bi-person-badge"></i> Pembina: Ibu Siti, S.Pd</li>
+                <li><i class="bi bi-geo-alt"></i> Ruang OSIS: Gedung A, Lt. 2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-info text-white">
+              <h5 class="mb-0"><i class="bi bi-person-lines-fill"></i> Daftar Pengurus OSIS</h5>
+            </div>
+            <div class="card-body p-2">
+              <div class="table-responsive">
+                <table class="table table-bordered table-sm align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Jabatan</th>
+                      <th>Nama</th>
+                      <th>Kelas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ketua</td>
+                      <td>Rizky Maulana</td>
+                      <td>XI IPA 1</td>
+                    </tr>
+                    <tr>
+                      <td>Wakil Ketua</td>
+                      <td>Salsabila Putri</td>
+                      <td>XI IPS 2</td>
+                    </tr>
+                    <tr>
+                      <td>Sekretaris</td>
+                      <td>Ahmad Fadli</td>
+                      <td>X IPA 2</td>
+                    </tr>
+                    <tr>
+                      <td>Bendahara</td>
+                      <td>Intan Permata</td>
+                      <td>XII IPA 1</td>
+                    </tr>
+                    <tr>
+                      <td>Humas</td>
+                      <td>Bagus Pratama</td>
+                      <td>XI IPA 3</td>
+                    </tr>
+                    <!-- Tambahkan pengurus lain sesuai kebutuhan -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Jadwal Kegiatan OSIS -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-header bg-warning">
+              <h5 class="mb-0"><i class="bi bi-calendar-week"></i> Jadwal Kegiatan OSIS</h5>
+            </div>
+            <div class="card-body p-2">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Tanggal</th>
+                      <th>Kegiatan</th>
+                      <th>Tempat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15 Juni 2025</td>
+                      <td>Rapat Program Kerja</td>
+                      <td>Ruang OSIS</td>
+                    </tr>
+                    <tr>
+                      <td>20 Juni 2025</td>
+                      <td>Bakti Sosial</td>
+                      <td>Desa Sukamaju</td>
+                    </tr>
+                    <tr>
+                      <td>25 Juni 2025</td>
+                      <td>Latihan Kepemimpinan</td>
+                      <td>Aula Sekolah</td>
+                    </tr>
+                    <tr>
+                      <td>30 Juni 2025</td>
+                      <td>Pelantikan Anggota Baru</td>
+                      <td>Lapangan Upacara</td>
+                    </tr>
+                    <!-- Tambahkan jadwal lain sesuai kebutuhan -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-2 text-end">
+                <small class="text-muted">* Jadwal dapat berubah sewaktu-waktu</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</main>
     <!--end::App Wrapper-->
     <!--begin::Script-->
     <!--begin::Third Party Plugin(OverlayScrollbars)-->

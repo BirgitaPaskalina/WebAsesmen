@@ -110,7 +110,7 @@
                 <i class="nav-icon bi bi-clipboard-fill"></i>
                 <p>
                   Ekstrakurikuler
-                  <span class="nav-badge badge text-bg-secondary me-3">14</span>
+                  <span class="nav-badge badge text-bg-secondary me-3">11</span>
                  <i id="ikon-panah-ekstrakurikuler" class="nav-arrow bi bi-chevron-right"></i>
                 </p>
               </a>
@@ -167,18 +167,6 @@
                   <li class="nav-item">
                     <a href="./layout/fixed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
-                      <p>ROHKAT</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./layout/fixed-sidebar.html" class="nav-link">
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>ROHKRIS</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./layout/fixed-sidebar.html" class="nav-link">
-                      <i class="nav-icon bi bi-circle"></i>
                       <p>ELVISKA</p>
                     </a>
                   </li>
@@ -196,6 +184,59 @@
                   </li>
                 </ul>
               </li>
+
+        <li class="nav-item">
+              <a href="#" class="nav-link" id="menu-ekstrakurikuler">
+                <i class="nav-icon bi bi-clipboard-fill"></i>
+                <p>
+                  Organisasi
+                  <span class="nav-badge badge text-bg-secondary me-3">5</span>
+                 <i id="ikon-panah-ekstrakurikuler" class="nav-arrow bi bi-chevron-right"></i>
+                </p>
+              </a>
+
+                <ul class="nav nav-treeview" style="display: none;">
+                  <li class="nav-item">
+                    <a href="OSIS.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>OSIS</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="MPK.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>MPK</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="ROHKAT.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>ROHKAT</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="ROHKRIS.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>ROHKRIS</p>
+                    </a>
+                  </li>
+                 <li class="nav-item">
+                    <a href="ROHKAT.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>ROHIS</p>
+                    </a>
+                  </li>
+                  </ul>
+
+                  <li class="nav-item menu-open">
+                <a href="Jadwal.php" class="nav-link active">
+                  <i class="nav-icon bi bi-speedometer"></i>
+                  <p>
+                    Jadwal
+                  </p>
+                </a>
+              </li>
+                  
               <li class="nav-header">Akun</li>
               <li class="nav-item">
               
