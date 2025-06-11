@@ -35,6 +35,19 @@ class database{
     return $hasil;
 }
 
+function update_siswa(
+    $nisn, $nama, $jenis_kelamin, $kode_jurusan, $kelas, $alamat, $agama, $nohp) {
+        mysqli_query($this->koneksi,
+        "UPDATE siswa SET 
+            nama='$nama', 
+            jenis_kelamin='$jenis_kelamin', 
+            kode_jurusan='$kode_jurusan', 
+            kelas='$kelas', 
+            alamat='$alamat', 
+            agama='$agama', 
+            nohp='$nohp' 
+        WHERE nisn='$nisn'");
+    }
 
 function tampil_data_agama() {
     $hasil = [];
@@ -63,6 +76,19 @@ function tampil_data_jurusan() {
     return $hasil;
 }
 
+function tampil_data_user() {
+    $hasil = [];
+    $query = "SELECT * FROM users";
+
+    $data = mysqli_query($this->koneksi, $query);
+
+    while($row = mysqli_fetch_array($data)) {   
+        $hasil[] = $row;
+    }
+
+    return $hasil;
+}
+
 function tambah_siswa(
     $nisn,$nama,$jenis_kelamin,$kode_jurusan,$kelas,$alamat,$agama,$nohp) {
         mysqli_query($this->koneksi,
@@ -81,6 +107,16 @@ function tambah_jurusan($kode_jurusan, $nama_jurusan) {
     mysqli_query($this->koneksi, $query);
 }
 
+// Tambahkan di dalam class database di file koneksi.php
+
+public function get_siswa_by_nisn($nisn) {
+    $result = mysqli_query($this->koneksi, "SELECT * FROM siswa WHERE nisn='$nisn' LIMIT 1");
+    if ($result && mysqli_num_rows($result) > 0) {
+        return mysqli_fetch_assoc($result);
+    } else {
+        return false;
+    }
+}
 function tambah_user($nama, $email, $password, $role) {
     // Enkripsi password sebelum disimpan
     $password_hash = password_hash($password, PASSWORD_DEFAULT);

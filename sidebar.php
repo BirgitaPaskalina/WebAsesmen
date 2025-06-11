@@ -70,6 +70,12 @@
                       <p>Data Agama</p>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="user.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Data User</p>
+                    </a>
+                  </li>
                 </ul>
               </li>
                <li class="nav-item">
@@ -101,6 +107,14 @@
                     <a href="tambahagama.php" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Form Agama</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="tambahuser.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Form User</p>
                     </a>
                   </li>
                 </ul>

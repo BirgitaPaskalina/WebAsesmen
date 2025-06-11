@@ -197,27 +197,27 @@ $dp = new database();
                     <tr>
                       <td>Ketua</td>
                       <td>Rizky Maulana</td>
-                      <td>XI IPA 1</td>
+                      <td>XI RPL</td>
                     </tr>
                     <tr>
                       <td>Wakil Ketua</td>
                       <td>Salsabila Putri</td>
-                      <td>XI IPS 2</td>
+                      <td>XI RPL</td>
                     </tr>
                     <tr>
                       <td>Sekretaris</td>
                       <td>Ahmad Fadli</td>
-                      <td>X IPA 2</td>
+                      <td>X X MP</td>
                     </tr>
                     <tr>
                       <td>Bendahara</td>
                       <td>Intan Permata</td>
-                      <td>XII IPA 1</td>
+                      <td>XII BC</td>
                     </tr>
                     <tr>
                       <td>Humas</td>
                       <td>Bagus Pratama</td>
-                      <td>XI IPA 3</td>
+                      <td>XI BC</td>
                     </tr>
                     <!-- Tambahkan pengurus lain sesuai kebutuhan -->
                   </tbody>

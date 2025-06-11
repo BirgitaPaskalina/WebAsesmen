@@ -188,7 +188,13 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
   <!--begin::Small Box Widget 1-->
   <div class="small-box text-bg-primary" style="position: relative;">
     <div class="inner">
-      <h3>1024</h3>
+       <?php
+        // Ambil jumlah siswa dari database
+        $result = mysqli_query($dp->koneksi, "SELECT COUNT(*) as total FROM siswa");
+        $row = mysqli_fetch_assoc($result);
+        $jumlahSiswa = $row['total'];
+      ?>
+      <h3><?= $jumlahSiswa ?></h3>
       <p>Siswa</p>
     </div>
 
@@ -213,18 +219,21 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
                 <!--begin::Small Box Widget 2-->
                 <div class="small-box text-bg-success">
                   <div class="inner">
-                    <h3>7<sup class="fs-5"></sup></h3>
-                    <p>Mata Kejuruan </p>
-                  </div>
+       <?php
+        // Ambil jumlah siswa dari database
+        $result = mysqli_query($dp->koneksi, "SELECT COUNT(*) as total FROM jurusan");
+        $row = mysqli_fetch_assoc($result);
+        $jumlahJurusan = $row['total'];
+      ?>
+      <h3><?= $jumlahJurusan ?></h3>
+      <p>Jurusan</p>
+    </div>
                  <!-- Tambahkan gambar user -->
    <img src="jurusanicon.png" alt="Major Icon"
      style="position: absolute; top: 0; right: 10px; height: 98%; opacity: 0.1;" />
 
 
-    <a
-                    href="datajurusan.php"
-                    class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
-                  >
+    <a href="datajurusan.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                     Selengkapnya <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
@@ -234,14 +243,20 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
               <div class="col-lg-3 col-6">
                 <!--begin::Small Box Widget 3-->
                 <div class="small-box text-bg-warning">
-                  <div class="inner text-white">
-                    <h3>14</h3>
-                    <p>Ekstrakurikuler</p>
-                  </div>
+                  <div class="inner">
+       <?php
+        // Ambil jumlah siswa dari database
+        $result = mysqli_query($dp->koneksi, "SELECT COUNT(*) as total FROM agama");
+        $row = mysqli_fetch_assoc($result);
+        $jumlahAgama = $row['total'];
+      ?>
+      <h3><?= $jumlahAgama ?></h3>
+      <p>Agama</p>
+    </div>
                   <img src="pie-chart.png" alt="Piechart Icon"
                     style="position: absolute; top: 0; right: 10px; height: 85%; opacity: 0.1;" />
                 <a
-                  href="javascript:void(0);"
+                  href="dataagama.php"
                   onclick="bukaMenuEkstrakurikuler()"
                   class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
@@ -256,13 +271,13 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
                 <!--begin::Small Box Widget 4-->
                 <div class="small-box text-bg-danger">
                   <div class="inner">
-                    <h3>A</h3>
-                    <p>Akreditasi</p>
+                    <h3>4</h3>
+                    <p>User</p>
                   </div>
                    <img src="book.png" alt="Book Icon"
                       style="position: absolute; top: 0; right: 10px; height: 85%; opacity: 0.09;" />
                   <a
-                    href="Tentang.php"
+                    href="#"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
                     Selengkapnya <i class="bi bi-link-45deg"></i>

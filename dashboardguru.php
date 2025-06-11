@@ -159,8 +159,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'guru') {
       </nav>
       <!--end::Header-->
       <?php include "sidebar.php"; ?>
-      <!--begin::App Main-->
-      <main class="app-main">
+      <main class="app-main"><!--begin::App Main-->
+      
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -191,6 +191,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'guru') {
       <h3>1024</h3>
       <p>Siswa</p>
     </div>
+
+    
 
     <!-- Tambahkan gambar user -->
  <img src="user.png" alt="Major Icon"
@@ -273,14 +275,28 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'guru') {
             <!--end::Row-->
             <!--begin::Row-->
             <div class="row">
-              <!-- Start col -->
-            <div class="col-lg-7 connectedSortable">
-  <div class="card mb-4">
-    <div class="card-header">
-      <h3 class="card-title">Jumlah Peserta Didik</h3>
+            
+<div class="row">
+  <!-- Start col -->
+  <div class="col-lg-7 connectedSortable">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title">Pengumuman</h3>
+      </div>
+      <div class="card-body p-0">
+        <iframe src="Pengumuman.php" style="width:100%; min-height:340px; border:none; border-radius:8px; background:#fff;"></iframe>
+      </div>
     </div>
-    <div class="position-relative mb-4">
-      <div id="sales-chart"></div> <!-- Tinggi ditambahkan di sini -->
+  </div>
+  <!-- Tambahkan kolom baru untuk jadwal -->
+  <div class="col-lg-5">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title">Jadwal Kegiatan</h3>
+      </div>
+      <div class="card-body p-0">
+        <iframe src="jadwal.php" style="width:100%; min-height:300px; border:none; border-radius:8px; background:#fff;"></iframe>
+      </div>
     </div>
   </div>
 </div>
@@ -387,8 +403,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'guru') {
   const sales_chart_options = {
     series: [
       {
-        name: 'Jumlah Peserta Didik',
-        data: [1750, 1500, 1580, 1700, 1840, 2000],
+        name: 'Jumlah Peserta Didik ',
+        data: [60, 65, 1580, 1700, 1840, 2000],
       }
     ],
     chart: {

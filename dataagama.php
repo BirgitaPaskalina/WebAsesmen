@@ -125,15 +125,19 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
           </div>
         </div>
         <div class="app-content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                 <div class="card mb-4">
-                  <div class="card-header">
-                    <h3 class="card-title">Tabel Data Agama</h3>
+  <div class="container-fluid">
+    <!-- Tambah tombol di sini -->
+    <a href="tambahagama.php" class="btn btn-primary mt-3 mb-2"><i class="bi bi-person-plus"></i> Tambah Agama</a>
+    <div class="row">
+      <div class="col-md-12">
+         <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="card-title">Tabel Data Agama</h3>
+
                   </div>
                   <div class="card-body p-0">
                     <div class="table-responsive">
+                      
                       <table class="table table-striped" id="tabelAgama">
                         <thead>
                           <tr>
@@ -159,7 +163,9 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
                           </tr>
                           <?php endforeach; ?>
                         </tbody>
+                    
                       </table>
+                      
                     </div>
                   </div>
                 </div>
