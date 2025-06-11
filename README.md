@@ -9,25 +9,25 @@
 
 
 ## Demo
-Clone :  Link repo
+Clone :  [Link repo](https://github.com/BirgitaPaskalina/WebAsesmen)
 
 
 ## Halaman
 
 ### Masuk
-![Screenshot 2025-06-11 105936](https://github.com/user-attachments/assets/009df202-22f3-4175-8d26-253b4dc3e798)
+![Screenshot 2025-06-11 183914](https://github.com/user-attachments/assets/93cf7f67-a030-4322-ab09-06172a526f8f)
 
-### Tambah Akun
-![Screenshot 2025-06-11 110353](https://github.com/user-attachments/assets/e78742b6-b91d-4193-b10e-f2b3d2ba5982)
 
 ### Dashboard
-![Screenshot 2025-06-11 104401](https://github.com/user-attachments/assets/d9a35259-47bd-49d0-b5cb-70374d63e7ac)
+![Screenshot 2025-06-11 183758](https://github.com/user-attachments/assets/d1440886-f051-48fe-bbd0-2d3e47f47e07)
+
 
 ### Tentang
 ![Screenshot 2025-06-11 104425](https://github.com/user-attachments/assets/b47db919-38a8-4262-b540-a18c82b2676c)
 
 ### Data Siswa
-![Screenshot 2025-06-11 104440](https://github.com/user-attachments/assets/d4c79e49-20e4-4ce6-8adc-5dfe3a3f841c)
+![Screenshot 2025-06-11 184735](https://github.com/user-attachments/assets/f7b71700-d79f-4fe9-ad4b-96c8f0e03baf)
+
 
 ### Data Tambah
 ![Screenshot 2025-06-11 104858](https://github.com/user-attachments/assets/04f63c52-dfe1-4c40-834a-11f4e988c627)
@@ -51,13 +51,16 @@ Clone :  Link repo
 ## 🧩 Rancangan Database
 
 ### Agama
-![Screenshot 2025-06-11 115821](https://github.com/user-attachments/assets/994645dd-2209-420b-9a27-be6a89bdeecc)
+![Screenshot 2025-06-11 184422](https://github.com/user-attachments/assets/36da5f0f-6aec-4359-8c53-60c361ea6cd9)
+
 
 ### Jurusan
-![Screenshot 2025-06-11 115830](https://github.com/user-attachments/assets/f2cad9dc-beb8-44c0-a9e8-63e90a966674)
+![Screenshot 2025-06-11 184440](https://github.com/user-attachments/assets/4f19f7f8-476b-4c90-af69-2007f300ea58)
+
 
 ### Siswa
-![Screenshot 2025-06-11 120000](https://github.com/user-attachments/assets/91aa593a-a2e6-44dd-a625-cec73fc3f63e)
+![Screenshot 2025-06-11 184404](https://github.com/user-attachments/assets/4db89747-039e-4332-98b4-8731650a5f32)
+
 
 ### Users
 ![Screenshot 2025-06-11 115759](https://github.com/user-attachments/assets/6f495d0e-d146-40cd-80e5-9b387701ddba)
